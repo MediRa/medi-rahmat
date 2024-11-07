@@ -1,0 +1,14 @@
+https://help.dreamhost.com/hc/en-us/articles/4466702078740-Configure-git-to-use-main-as-the-primary-branch
+
+git.txt
+
+// how to configure git to use main as the primary branch
+
+git branch -a                               // check the name of current branch
+git checkout master                         // make your active branch is master branch
+git branch -m main                          // rename your master branch to main
+git symbolic-ref HEAD refs/heads/main       // update symbolic ref
+
+// update your remote repositories 
+git push -u [remote-name] main
+git push 
